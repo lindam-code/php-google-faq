@@ -43,10 +43,10 @@
   <body>
     <!-- Sezione Faq -->
     <?php foreach ($array_faq as $single_faq) { ?>
-      <?php if (isset($single_faq['question']) && !empty($single_faq['question'])) { ?>
+      <?php if (!empty($single_faq['question'])) { ?>
         <p class='question'> <?php echo $single_faq['question'] ?> </p>
       <?php } ?>
-      <?php if (isset($single_faq['question']) && !empty($single_faq['question'])) { ?>
+      <?php if (!empty($single_faq['question'])) { ?>
       <p class='answer'> <?php echo $single_faq['answer'] ?> </p>
       <?php } ?>
     <?php } ?>
