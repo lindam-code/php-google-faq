@@ -1,3 +1,78 @@
-.question {
-  font-weight: bold; 
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+/* FINE RESET */
+
+/* STILI GENERALI */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #48494b;
+}
+/* FINE STILI GENERALI */
+
+/* INIZIO HEADER */
+header {
+  padding: 10px 25px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #48494b;
+  position: fixed;
+  background-color: white;
+}
+.logo {
+  font-size: 20px;
+  flex-basis: 100%;
+  padding: 15px 0;
+}
+.logo img {
+  vertical-align: middle;
+}
+nav {
+  flex-basis: 60%;
+}
+.menu {
+  list-style-type: none;
+}
+.menu li {
+  display: inline-block;
+  margin: 0 25px;
+}
+.current_page {
+  color: #3367d6;
+}
+.account {
+  flex-basis: 20%;
+}
+.account_symbol {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+}
+/* FINE HEADER */
+
+/* MAIN */
+main {
+  padding-top: 170px;
+}
+.container {
+  width: 60%;
+  margin: auto;
+}
+.question {
+  color: #3e4245;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 25px 0;
+}
+/* FINE MAIN */

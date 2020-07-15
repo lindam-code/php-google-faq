@@ -38,18 +38,46 @@
   <head>
     <meta charset="utf-8">
     <title>Google Faq</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- Sezione Faq -->
-    <?php foreach ($array_faq as $single_faq) { ?>
-      <?php if (!empty($single_faq['question'])) { ?>
-        <p class='question'> <?php echo $single_faq['question'] ?> </p>
-      <?php } ?>
-      <?php if (!empty($single_faq['question'])) { ?>
-      <p class='answer'> <?php echo $single_faq['answer'] ?> </p>
-      <?php } ?>
-    <?php } ?>
-    <!-- Fine sezione Faq -->
+    <!-- Inizio header -->
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="logo">
+        <span>Privacy e Termini</span>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li>Introduzione</li>
+          <li>Norme sulla Privacy</li>
+          <li>Termini di servizio</li>
+          <li>Tecnologie</li>
+          <li class="current_page">Domande Frequenti</li>
+        </ul>
+      </nav>
+      <div class="account">
+        <span class="account_symbol">L</span><span>linda.test@gmail.com</span>
+      </div>
+    </header>
+    <!-- Fine header -->
+
+    <!-- Inizio main -->
+    <main>
+      <div class="container">
+        <!-- Sezione Faq -->
+        <?php foreach ($array_faq as $single_faq) { ?>
+          <?php if (!empty($single_faq['question'])) { ?>
+            <p class="question"> <?php echo $single_faq['question'] ?> </p>
+          <?php } ?>
+          <?php if (!empty($single_faq['question'])) { ?>
+            <p class="answer"> <?php echo $single_faq['answer'] ?> </p>
+          <?php } ?>
+        <?php } ?>
+        <!-- Fine sezione Faq -->
+      </div>
+      <!-- Fine main -->
+    </main>
   </body>
 </html>
